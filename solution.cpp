@@ -45,6 +45,8 @@ void sortstore (){
     }
 }
 
+//esto es para imprimir los datos que 
+//hay en el array store 
 void printstore (){
     for (size_t i = 0; i < n; i++)
     {
