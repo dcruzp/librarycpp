@@ -5,10 +5,11 @@
 using namespace std ; 
 
 // maxima longitud que puede tener el parametro n (es decir la longitud del array )
-#define MAX_LENGHT 50
+#define MAX_LENGHT_T 1001
+#define MAX_LENGHT_N 51
 
-int t , n , store [MAX_LENGHT] ; 
-
+int t , n , store [MAX_LENGHT_N] ; 
+string results [MAX_LENGHT_T]; 
 
 //lee la entrada 
 // es decir lee un numbero n 
@@ -85,18 +86,26 @@ int main (){
 
     cin >> t;
 
-    while (t-- > 0)
+    for (size_t i = 0; i < t ; i++)
     {
         clearstore();
         readInput(); 
         sortstore();
         int c  = countsubset(); 
-        if (c < 2 ){
-            cout << "cumple" << endl; 
+        if (c < 2 )
+        {
+            results[i] = "YES";   
         }
-        else {
-            cout << "no cumple" << endl;
+        else 
+        {
+            results[i] = "NO" ; 
         }
     }
-    
+
+    for (size_t i = 0; i < t; i++)
+    {
+        cout << results[i]<< endl ;
+    }
+
+    return 0 ; 
 }
