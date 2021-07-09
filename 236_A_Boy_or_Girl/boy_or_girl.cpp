@@ -20,7 +20,7 @@ int main(){
             cont++;
         }
     }
-
+    // cheaqueo de salida:
     if(cont % 2 == 0)
     {
         cout<<"CHAT WITH HER!"<<endl;
@@ -32,8 +32,11 @@ int main(){
 return 0;
 }
 
-
-// gua
+// usando ASCCI:
+// Este metodo le asigna el valor true,  
+// al indice del array boolean que
+// le corresponde al convertir de string a int(ASCCI),
+  :
 void result(string a)
 {
     int n = 0;
